@@ -26,10 +26,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -68,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.title { text-align: center; font-weight: bold; font-size: 20pt; }
+.todo-done { text-decoration: line-through; }
+.container { padding: 10px 10px 10px 10px; }
+.panel-borderless { border: 0; box-shadow: none; }
+.pointer { cursor: pointer; }

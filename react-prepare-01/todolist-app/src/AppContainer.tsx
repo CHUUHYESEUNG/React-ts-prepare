@@ -1,6 +1,6 @@
 import produce from 'immer'
 import { useState } from 'react'
-// import App from './components/App'
+import App from './components/App'
 
 /****
  *  AppContainer

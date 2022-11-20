@@ -1,7 +1,7 @@
 import React from 'react'
 import { TodoListItemType } from '../AppContainer'
-//import InputTodo from './InputTodo'
-//import TodoList from './TodoList'
+import InputTodo from './InputTodo'
+import TodoList from './TodoList'
 
 type AppProps = {
     todoList: Array<TodoListItemType>;
@@ -18,11 +18,9 @@ const App = (props: AppProps) => {
             </div>
             <div className="card card-default card-borderless">
                 <div className="card-body">
-                    {/*
                     <InputTodo addTodo={props.addTodo} />
                     <TodoList todoList={props.todoList}
                         toggleDone={props.toggleDone} deleteTodo={props.deleteTodo} />
-                    */}
                 </div>
             </div>
         </div>
