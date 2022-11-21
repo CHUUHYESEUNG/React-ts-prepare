@@ -6,7 +6,7 @@ const App = () => {
 
     useEffect(() => {
         console.log(`${name} 님이 ${count}번 클릭했습니다.`)
-    });
+    }, [ ]);
 
     return (
         <div>
@@ -14,9 +14,12 @@ const App = () => {
             <input type="text" value={name}
             onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)} />
             <hr />
-            <br />
-
-            
+            <button onClick={() => setCount(count + 1)}>카운트 1 증가</button>
+            <p>
+                {name} 님이 {count}번 클릭했습니다.
+            </p>
         </div>
     );
 };
+
+export default App;
