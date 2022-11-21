@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, PureComponent } from "react";
 import { TodoListItemType } from "../AppContainer";
 
 type Props = {
@@ -7,13 +7,13 @@ type Props = {
   toggleDone: Function;
 };
 
-export default class TodoListItem extends Component<Props> {
+export default class TodoListItem extends PureComponent<Props> {
 
-  shouldComponentUpdate(nextProps: Props, nextState: {}) {
-    if (nextProps.todoItem !== this.props.todoItem) return true;
-    return false;
-  }
-  
+  // shouldComponentUpdate(nextProps: Props, nextState: {}) {
+  //   if (nextProps.todoItem !== this.props.todoItem) return true;
+  //   return false;
+  // }
+
   render() {
     console.log("## TodoListItem 렌더")
     let itemClassName = "list-group-item";
